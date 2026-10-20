@@ -1,0 +1,173 @@
+/* ============================= */
+/* RESET DAN FONT */
+/* ============================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* ============================= */
+/* BACKGROUND */
+/* ============================= */
+
+body {
+    min-height: 100vh;
+
+    background-image: url("kimdokja.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+/* ============================= */
+/* KOTAK LOGIN TRANSPARAN */
+/* ============================= */
+
+.container {
+    width: 100%;
+    max-width: 350px;
+    padding: 25px;
+
+    background-color: rgba(15, 13, 20, 0.45);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+
+    border: 1px solid rgba(207, 184, 139, 0.55);
+    border-radius: 12px;
+
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
+}
+
+/* ============================= */
+/* JUDUL LOGIN */
+/* ============================= */
+
+.container h1 {
+    color: #e8dcc4;
+
+    margin-bottom: 30px;
+
+    text-transform: uppercase;
+    text-align: center;
+
+    border-bottom: 3px solid #a99570;
+    padding-bottom: 10px;
+
+    letter-spacing: 2px;
+
+    text-shadow: 0 0 10px rgba(225, 201, 149, 0.2);
+}
+
+/* ============================= */
+/* LABEL USERNAME DAN PASSWORD */
+/* ============================= */
+
+.container label {
+    display: block;
+
+    color: #ddd2c5;
+
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+/* ============================= */
+/* KOLOM INPUT */
+/* ============================= */
+
+.container form input {
+    display: block;
+
+    width: 100%;
+    padding: 12px;
+
+    margin-bottom: 20px;
+
+    background-color: rgba(20, 18, 25, 0.5);
+
+    color: #fffaf0;
+
+    border: 1px solid rgba(183, 163, 130, 0.65);
+    border-radius: 6px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+/* TULISAN PLACEHOLDER */
+
+.container form input::placeholder {
+    color: #c0b7ae;
+}
+
+/* SAAT KOLOM DIPILIH */
+
+.container form input:focus {
+    border-color: #e1c995;
+
+    box-shadow: 0 0 8px rgba(225, 201, 149, 0.25);
+}
+
+/* ============================= */
+/* TOMBOL LOGIN */
+/* ============================= */
+
+.container button {
+    display: block;
+
+    width: 100%;
+    padding: 12px;
+
+    background: rgba(139, 112, 69, 0.8);
+
+    color: #fffaf0;
+
+    border: 1px solid #c5ad7e;
+    border-radius: 6px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* EFEK SAAT TOMBOL DISENTUH */
+
+.container button:hover {
+    background: rgba(174, 145, 94, 0.9);
+
+    box-shadow: 0 0 12px rgba(197, 173, 126, 0.3);
+}
+
+/* EFEK SAAT TOMBOL DITEKAN */
+
+.container button:active {
+    transform: scale(0.98);
+}
+
+/* ============================= */
+/* TAMPILAN HP */
+/* ============================= */
+
+@media screen and (max-width: 400px) {
+    .container {
+        padding: 20px;
+    }
+
+    .container h1 {
+        font-size: 25px;
+    }
+}
